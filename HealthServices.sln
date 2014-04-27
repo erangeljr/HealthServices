@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Web", "HealthServices.Web\HealthServices.Web.csproj", "{452F139C-9B85-436A-BD5D-96E09DC0CDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Tests", "HealthServices.Tests\HealthServices.Tests.csproj", "{C45E7B54-BC88-4B09-975D-12284B1317D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{42D4AC57-2399-4C06-9B33-9B6D3935C57A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebAppPublishModule.psm1 = PublishScripts\AzureWebAppPublishModule.psm1
+		PublishScripts\Publish-WebApplication.ps1 = PublishScripts\Publish-WebApplication.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{B7700930-F86E-48A5-9028-A05CBE16F9A6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\HealthServicesWeb-WAWS-dev.json = PublishScripts\Configurations\HealthServicesWeb-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Services", "HealthServices.Services\HealthServices.Services.csproj", "{BB007A3F-2D91-4C56-B60F-3FB43D483159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Domain", "HealthServices.Domain\HealthServices.Domain.csproj", "{5941379B-AA6C-4B4A-A41D-18AB7917076D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Data", "HealthServices.Data\HealthServices.Data.csproj", "{D8061621-08B6-4D6D-BC55-E02B4968C423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452F139C-9B85-436A-BD5D-96E09DC0CDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452F139C-9B85-436A-BD5D-96E09DC0CDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452F139C-9B85-436A-BD5D-96E09DC0CDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452F139C-9B85-436A-BD5D-96E09DC0CDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45E7B54-BC88-4B09-975D-12284B1317D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45E7B54-BC88-4B09-975D-12284B1317D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45E7B54-BC88-4B09-975D-12284B1317D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45E7B54-BC88-4B09-975D-12284B1317D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB007A3F-2D91-4C56-B60F-3FB43D483159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB007A3F-2D91-4C56-B60F-3FB43D483159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB007A3F-2D91-4C56-B60F-3FB43D483159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB007A3F-2D91-4C56-B60F-3FB43D483159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5941379B-AA6C-4B4A-A41D-18AB7917076D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5941379B-AA6C-4B4A-A41D-18AB7917076D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5941379B-AA6C-4B4A-A41D-18AB7917076D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5941379B-AA6C-4B4A-A41D-18AB7917076D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7700930-F86E-48A5-9028-A05CBE16F9A6} = {42D4AC57-2399-4C06-9B33-9B6D3935C57A}
+	EndGlobalSection
+EndGlobal
