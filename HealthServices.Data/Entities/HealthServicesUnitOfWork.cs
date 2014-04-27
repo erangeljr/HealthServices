@@ -7,14 +7,14 @@ namespace HealthServices.Data.Entities
 {
     public class HealthServicesUnitOfWork : DbContext, IUnitOfWork
     {
-        private HealthServicesRepository<Person> personRepository;
+        private HealthServicesRepository<Person> _personRepository;
 
         public DbSet<Person> Person { get; set; }
 
 
         public HealthServicesUnitOfWork()
         {
-            personRepository = null;
+            _personRepository = null;
         }
 
         #region IUnitOfWork Implementation
@@ -22,11 +22,11 @@ namespace HealthServices.Data.Entities
         {
             get
             {
-                if (personRepository == null)
+                if (_personRepository == null)
                 {
-                    personRepository = new HealthServicesRepository<Person>(this, Person);
+                    _personRepository = new HealthServicesRepository<Person>(this, Person);
                 }
-                return personRepository;
+                return _personRepository;
             }
         }
 
