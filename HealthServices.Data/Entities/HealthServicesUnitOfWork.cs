@@ -18,7 +18,7 @@ namespace HealthServices.Data.Entities
         }
 
         #region IUnitOfWork Implementation
-        public IRepository<Person> OutcomeRepository
+        public IRepository<Person> PersonRepository
         {
             get
             {
@@ -59,15 +59,5 @@ namespace HealthServices.Data.Entities
             base.OnModelCreating(modelBuilder);
         }
 
-
-        public IRepository<Person> PersonRepository
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

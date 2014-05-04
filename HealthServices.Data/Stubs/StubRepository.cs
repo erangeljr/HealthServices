@@ -20,7 +20,7 @@ namespace HealthServices.Data.Stubs
 
         #region IRepository<T> implementation
 
-        public virtual IQueryable<T> GetAsQueryable()
+        public virtual IQueryable<T> AsQueryable()
         {
             return _list.AsQueryable();
         }

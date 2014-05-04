@@ -11,7 +11,7 @@ namespace HealthServices.Domain.Interfaces
         /// Returns all entities
         /// </summary>
         /// <returns>Queryable collection of all entities</returns>
-        IQueryable<T> GetAsQueryable();
+        IQueryable<T> AsQueryable();
 
         /// <summary>
         /// Returns all entities in the table.

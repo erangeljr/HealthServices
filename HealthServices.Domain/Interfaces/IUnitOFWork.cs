@@ -3,7 +3,7 @@ using HealthServices.Domain.Models;
 
 namespace HealthServices.Domain.Interfaces
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork 
     {
         IRepository<Person> PersonRepository { get; }
 
