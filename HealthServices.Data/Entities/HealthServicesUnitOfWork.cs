@@ -17,7 +17,6 @@ namespace HealthServices.Data.Entities
             _personRepository = null;
         }
 
-        #region IUnitOfWork Implementation
         public IRepository<Person> PersonRepository
         {
             get
@@ -47,10 +46,6 @@ namespace HealthServices.Data.Entities
             throw new NotImplementedException();
         }
 
- 
-
-
-        #endregion
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
