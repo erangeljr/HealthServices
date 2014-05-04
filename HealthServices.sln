@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Domain", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Data", "HealthServices.Data\HealthServices.Data.csproj", "{D8061621-08B6-4D6D-BC55-E02B4968C423}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthServices.Constants", "HealthServices.Constants\HealthServices.Constants.csproj", "{05299319-AA39-4122-AA76-1EF46AB92D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8061621-08B6-4D6D-BC55-E02B4968C423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05299319-AA39-4122-AA76-1EF46AB92D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05299319-AA39-4122-AA76-1EF46AB92D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05299319-AA39-4122-AA76-1EF46AB92D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05299319-AA39-4122-AA76-1EF46AB92D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

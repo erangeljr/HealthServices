@@ -20,7 +20,6 @@ namespace HealthServices.Data.Entities
             _dbSet = dbSet;
         }
 
-        #region IRepository<T> implementation
 
         public virtual IQueryable<T> GetAsQueryable()
         {
@@ -79,19 +78,5 @@ namespace HealthServices.Data.Entities
         }
 
 
-        #endregion
-
-
-        public IEnumerable<T> FindWithChildren(Expression<Func<T, bool>> predicate, string[] children)
-        {
-            var query = _dbSet.AsQueryable();
-
-            foreach (var child in children)
-            {
-                query = query.Include(child);
-            }
-
-            return query.Where(predicate);
-        }
     }
 }
