@@ -45,6 +45,7 @@
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Provider.cs" />
+    <Compile Include="Models\VitalSign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
