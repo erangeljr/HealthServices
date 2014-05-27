@@ -3,40 +3,73 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Buena Health</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+<body><div id="page">
+    <header class="container">
+        <div id="menu" class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button class="btn btn-success navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                <div id="logo">
+                    <a href="." class="navbar-brand">Buena Health</a>
+                </div>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav active">>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="records.html">Records</a></li>
+                    <li class="nav"><a href="history.html">History</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    </header>
+    <section id="body" class="container">
+        <div class="page-header">
+            <h1>Buena Health</h1>
+            <p class="lead">Here's to your health.</p>
+        </div>
+        <section id="main" class="col-md-8 col-sm-9">
+            @RenderBody()
+        </section>
+        <section id="sidebar" class="col-md-4 col-sm-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Personal eHealth</h2>
+                </div>
+                <div class="panel-body">
+                    <p>You don't have to be without your Health infomration . You can securely store and retreive your information instantly.</p>
+                </div>
+                <div class="panel-footer">
+                    <button class="btn btn-primary">Click Me</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr />
+    <footer class="container">
+        <p>&copy; @DateTime.Now.Year - All Rights Reserved <a href="http://www.eddierangel.com/">Buena Health</a>.</p>
 
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/site.js"></script>
+<script type="text/javascript">
+
+</script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
